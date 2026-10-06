@@ -1,0 +1,12 @@
+CAMBIOS DE DISEÑO (sin tocar la lógica)
+
+- pom.xml: se agregó la dependencia FlatLaf 3.7.2 (tema moderno).
+- App.java: nuevo método aplicarTema() que se llama al inicio. Si FlatLaf
+  fallara por algún motivo, la app sigue funcionando con el aspecto clásico.
+- PanelEntradaSalida.java: botones de Entrada en verde, de Salida en rojo,
+  "Borrar Empleado" con texto rojo, y botones un poco más altos.
+- PanelListadoEmpleados.java: letra y filas de la tabla más grandes.
+
+CÓMO GENERAR LA VERSIÓN NUEVA
+Ejecutar GENERAR_INSTALADOR.bat como siempre. Maven descarga FlatLaf solo
+y lo copia a la carpeta lib junto con las demás librerías.
